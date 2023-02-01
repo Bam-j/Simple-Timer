@@ -1,38 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
-    <title>Simple Timer</title>
+  <meta charset='UTF-8'>
+  <meta name='keyword' content='timer'>
+  <meta name='description' content='Simple timer web application'>
+  <meta name='author' content='Bam'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Simple Timer</title>
 </head>
 <body>
 <header>
-  <h1>Simple Timer</h1>
+  <h1 id='title'>Simple Timer</h1>
 </header>
 <main>
-<form>
-  <fieldset>
-    <label>
-      시(hour)
-      <input>
-    </label>
-  </fieldset>
-  <fieldset>
-    <label>
-      분(minute)
-      <input>
-    </label>
-  </fieldset>
-  <fieldset>
-    <label>
-      초(second)
-      <input>
-    </label>
-  </fieldset>
-  <fieldset>
-    <button>start</button>
-    <button>reset</button>
-  </fieldset>
-</form>
+  <form>
+    <fieldset class='formField'>
+      <label>
+        시(hour)
+        <input id='inputHour'>
+      </label>
+    </fieldset>
+    <fieldset class='formField'>
+      <label>
+        분(minute)
+        <input id='inputMinute'>
+      </label>
+    </fieldset>
+    <fieldset class='formField'>
+      <label>
+        초(second)
+        <input id='inputSecond'>
+      </label>
+    </fieldset>
+    <fieldset class='formField'>
+      <button id='startAndPauseButton'>start</button>
+      <button id='resetAndStopButton'>reset</button>
+    </fieldset>
+  </form>
 </main>
 </body>
 </html>
