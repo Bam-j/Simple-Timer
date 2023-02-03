@@ -1,0 +1,11 @@
+{
+  "name": "simple-timer",
+  "author": "Bam",
+  "version": "0.0.0",
+  "dependencies": {
+    "jest": "^29.4.1"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
