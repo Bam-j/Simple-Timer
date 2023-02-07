@@ -1,1 +1,1 @@
-const resetAndStopButtonAction = time => {};
+const resetAndStopButtonAction = (resetAndStopButton, time) => {};
