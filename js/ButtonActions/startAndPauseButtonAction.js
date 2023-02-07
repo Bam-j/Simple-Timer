@@ -1,8 +1,12 @@
 export const startAndPauseButtonAction = (startAndPauseButton, time) => {
-  if (startAndPauseButton.value === 'start') {
-    startAndPauseButton.innerHTML = 'pause';
+  if (startAndPauseButton.innerText === 'start') {
+    startAndPauseButton.innerText = 'pause';
   }
   else {
-    startAndPauseButton.innerHTML = 'start';
+    startAndPauseButton.innerText = 'start';
   }
+
+  document.getElementById('inputHour').disabled = true;
+  document.getElementById('inputMinute').disabled = true;
+  document.getElementById('inputSecond').disabled = true;
 };

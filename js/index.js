@@ -1,17 +1,16 @@
-import {getTimeFromInputElements} from './getTimeFromInputElements.js';
 import {startAndPauseButtonAction} from './ButtonActions/startAndPauseButtonAction.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-  let startAndPauseButton = document.getElementById('startAndPauseButton');
-  let resetAndStopButton = document.getElementById('resetAndStopButton');
+  const startAndPauseButton = document.getElementById('startAndPauseButton');
+  const resetAndStopButton = document.getElementById('resetAndStopButton');
 
-  let time;
+  const hour = parseInt(document.getElementById('inputHour').value);
+  const minute = parseInt(document.getElementById('inputMinute').value);
+  const second = parseInt(document.getElementById('inputSecond').value);
+
+  let time = [hour, minute, second];
 
   startAndPauseButton.addEventListener('click', () => {
-    console.log('start 버튼 액션');
-
-    time = getTimeFromInputElements();
-
     startAndPauseButtonAction(startAndPauseButton, time);
   });
   resetAndStopButton.addEventListener('click', () => {
