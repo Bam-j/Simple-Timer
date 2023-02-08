@@ -15,6 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     startAndPauseButtonAction(startAndPauseButton, time);
   });
   resetButton.addEventListener('click', () => {
-    resetButtonAction(resetButton, time);
+    resetButtonAction();
   });
 });
