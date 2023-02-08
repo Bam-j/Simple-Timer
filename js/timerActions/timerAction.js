@@ -1,11 +1,14 @@
 import {updateInput} from './updateInput.js';
+
+export let timerInterval;
+
 export const timerAction = totalSeconds => {
   //TODO: 엘리먼트 취득하는 중복 코드 줄이기
   const hour = document.getElementById('inputHour');
   const minute = document.getElementById('inputMinute');
   const second = document.getElementById('inputSecond');
 
-  let timerInterval = setInterval(() => {
+  timerInterval = setInterval(() => {
     totalSeconds--;
     updateInput(totalSeconds);
 
