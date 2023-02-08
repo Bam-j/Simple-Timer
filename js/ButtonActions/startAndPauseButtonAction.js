@@ -1,3 +1,5 @@
+import {timerAction} from '../timerActions/timerAction.js';
+
 export const startAndPauseButtonAction = startAndPauseButton => {
   const hour = document.getElementById('inputHour');
   const minute = document.getElementById('inputMinute');
@@ -14,7 +16,7 @@ export const startAndPauseButtonAction = startAndPauseButton => {
     startAndPauseButton.innerText = 'pause';
 
     totalSeconds = time[0] * 60 * 60 + time[1] * 60 + time[2];
-
+    timerAction(totalSeconds);
   }
   else {
     startAndPauseButton.innerText = 'start';
