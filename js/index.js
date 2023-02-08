@@ -1,8 +1,9 @@
 import {startAndPauseButtonAction} from './ButtonActions/startAndPauseButtonAction.js';
+import {resetButtonAction} from './ButtonActions/resetButtonAction.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const startAndPauseButton = document.getElementById('startAndPauseButton');
-  const resetAndStopButton = document.getElementById('resetAndStopButton');
+  const resetButton = document.getElementById('resetButton');
 
   const hour = parseInt(document.getElementById('inputHour').value);
   const minute = parseInt(document.getElementById('inputMinute').value);
@@ -13,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   startAndPauseButton.addEventListener('click', () => {
     startAndPauseButtonAction(startAndPauseButton, time);
   });
-  resetAndStopButton.addEventListener('click', () => {
-    resetAndStopButtonAction(resetAndStopButton, time);
+  resetButton.addEventListener('click', () => {
+    resetButtonAction(resetButton, time);
   });
 });
