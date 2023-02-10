@@ -13,3 +13,4 @@
 `HTML5`, `CSS3`, `JavaScript (ES6+)`
 
 ## 결과
+[결과물 링크(GitHub Pages)](https://bam-j.github.io/Simple-Timer/)
