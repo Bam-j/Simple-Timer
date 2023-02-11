@@ -1,15 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
 #title{
   font-weight: bold;
+  text-align: center;
 }
 
-.formField {
+.formField{
+  display: inline-block;
+  border: red solid;
+  padding-top: 1em;
+}
+
+#timer{
+  text-align: center;
+}
+
+#inputHour, #inputMinute, #inputSecond{
 
 }
 
-#inputHour, #inputMinute, #inputSecond {
-
+#buttons {
+  padding-top: 0.5em;
 }
 
-#startAndPauseButton, #resetButton {
+#startAndPauseButton, #resetButton{
 
 }

@@ -15,26 +15,29 @@
   <h1 id='title'>Simple Timer</h1>
 </header>
 <main>
-  <form>
+  <form id='timer'>
     <fieldset class='formField'>
       <label>
-        시(hour)
-        <input id='inputHour'>
+        시(hour)&nbsp;&nbsp;&nbsp;&nbsp;
+        <input id='inputHour' autocomplete='off'>
       </label>
     </fieldset>
+    <br>
     <fieldset class='formField'>
       <label>
         분(minute)
-        <input id='inputMinute'>
+        <input id='inputMinute' autocomplete='off'>
       </label>
     </fieldset>
+    <br>
     <fieldset class='formField'>
       <label>
         초(second)
-        <input id='inputSecond'>
+        <input id='inputSecond' autocomplete='off'>
       </label>
     </fieldset>
-    <fieldset class='formField'>
+    <br>
+    <fieldset class='formField' id='buttons'>
       <button id='startAndPauseButton' type='button' class='btn btn-primary'>start</button>
       <button id='resetButton' type='button' class='btn btn-danger'>reset</button>
     </fieldset>
