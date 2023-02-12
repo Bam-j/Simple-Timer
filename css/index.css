@@ -6,16 +6,22 @@ body {
 #title{
   font-weight: bold;
   text-align: center;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+#main-container {
+  text-align: center;
+  margin: 0 auto;
+  border: 1px red solid;
+  position: relative;
 }
 
 .formField{
-  display: inline-block;
-  border: red solid;
-  padding-top: 1em;
+  padding-top: 3rem;
 }
 
 #timer{
-  text-align: center;
 }
 
 #inputHour, #inputMinute, #inputSecond{
@@ -23,9 +29,14 @@ body {
 }
 
 #buttons {
-  padding-top: 0.5em;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-#startAndPauseButton, #resetButton{
+#startAndPauseButton {
+}
+
+#resetButton {
 
 }
