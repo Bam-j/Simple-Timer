@@ -13,6 +13,7 @@ export const startAndPauseButtonAction = startAndPauseButton => {
   minute.disabled = true;
   second.disabled = true;
 
+  //TODO: input에 아무것도 입력하지 않았을 경우와 음수, NaN입력 시의 예외 처리 추가하기
   if (startAndPauseButton.innerText === 'start') {
     startAndPauseButton.innerText = 'pause';
 

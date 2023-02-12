@@ -7,35 +7,44 @@
   <meta name='author' content='Bam'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <title>Simple Timer</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65' crossorigin='anonymous'>
+  <link href='./css/index.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <header>
   <h1 id='title'>Simple Timer</h1>
 </header>
+<br>
 <main>
-  <form>
-    <fieldset class='formField'>
-      <label>
-        시(hour)
-        <input id='inputHour'>
-      </label>
-    </fieldset>
-    <fieldset class='formField'>
-      <label>
-        분(minute)
-        <input id='inputMinute'>
-      </label>
-    </fieldset>
-    <fieldset class='formField'>
-      <label>
-        초(second)
-        <input id='inputSecond'>
-      </label>
-    </fieldset>
-    <fieldset class='formField'>
-      <button id='startAndPauseButton' type='button'>start</button>
-      <button id='resetButton' type='button'>reset</button>
+  <form id='timer'>
+    <table id='main-container'>
+      <tr>
+        <td>시(hour)</td>
+        <td>
+          <input id='inputHour' autocomplete='off'>
+        </td>
+      </tr>
+      <tr>
+        <td>분(minute)</td>
+        <td>
+          <input id='inputMinute' autocomplete='off'>
+        </td>
+      </tr>
+      <tr>
+        <td>초(second)</td>
+        <td>
+          <input id='inputSecond' autocomplete='off'>
+        </td>
+      </tr>
+    </table>
+    <fieldset class='formField' id='buttons'>
+      <button id='startAndPauseButton' type='button' class='btn btn-primary'>
+        start
+      </button>
+      <button id='resetButton' type='button' class='btn btn-danger'>
+        reset
+      </button>
     </fieldset>
   </form>
 </main>
