@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
 body {
   font-family: 'Noto Sans KR', sans-serif;
+  background-color: antiquewhite;
 }
 
 #title{
@@ -13,7 +15,6 @@ body {
 #main-container {
   text-align: center;
   margin: 0 auto;
-  border: 1px red solid;
   position: relative;
 }
 
@@ -32,6 +33,7 @@ body {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
 #startAndPauseButton {
