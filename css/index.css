@@ -2,7 +2,6 @@
 
 body {
   font-family: 'Noto Sans KR', sans-serif;
-  background-color: antiquewhite;
 }
 
 #title{
@@ -22,11 +21,10 @@ body {
   padding-top: 3rem;
 }
 
-#timer{
-}
-
-#inputHour, #inputMinute, #inputSecond{
-
+#inputHour:focus, #inputMinute:focus, #inputSecond:focus{
+  border: solid #083DDB;
+  outline: none;
+  box-shadow: 0 0 0.1em 0.1em #5B7CD8;
 }
 
 #buttons {
@@ -34,11 +32,4 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
-}
-
-#startAndPauseButton {
-}
-
-#resetButton {
-
 }
