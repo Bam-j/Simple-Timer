@@ -10,5 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   resetButton.addEventListener('click', () => {
     resetButtonAction();
+    startAndPauseButton.innerText = 'start';
   });
 });

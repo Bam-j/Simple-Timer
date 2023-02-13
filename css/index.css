@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
 body {
   font-family: 'Noto Sans KR', sans-serif;
 }
@@ -13,7 +14,6 @@ body {
 #main-container {
   text-align: center;
   margin: 0 auto;
-  border: 1px red solid;
   position: relative;
 }
 
@@ -21,22 +21,15 @@ body {
   padding-top: 3rem;
 }
 
-#timer{
-}
-
-#inputHour, #inputMinute, #inputSecond{
-
+#inputHour:focus, #inputMinute:focus, #inputSecond:focus{
+  border: solid #083DDB;
+  outline: none;
+  box-shadow: 0 0 0.1em 0.1em #5B7CD8;
 }
 
 #buttons {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-#startAndPauseButton {
-}
-
-#resetButton {
-
+  z-index: -1;
 }
