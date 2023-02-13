@@ -7,7 +7,17 @@ export const startAndPauseButtonAction = startAndPauseButton => {
   const second = document.getElementById('inputSecond');
 
   let time = [parseInt(hour.value), parseInt(minute.value), parseInt(second.value)];
-  let totalSeconds = 0;
+  let totalSeconds = time[0] * 60 * 60 + time[1] * 60 + time[2];
+
+  if (Number.isNaN(totalSeconds)) {
+    window.alert('유효한 값이 아닙니다.');
+
+    hour.value = '';
+    minute.value = '';
+    second.value = '';
+
+    return;
+  }
 
   hour.disabled = true;
   minute.disabled = true;
@@ -17,7 +27,6 @@ export const startAndPauseButtonAction = startAndPauseButton => {
   if (startAndPauseButton.innerText === 'start') {
     startAndPauseButton.innerText = 'pause';
 
-    totalSeconds = time[0] * 60 * 60 + time[1] * 60 + time[2];
     timerAction(totalSeconds);
   }
   else {
