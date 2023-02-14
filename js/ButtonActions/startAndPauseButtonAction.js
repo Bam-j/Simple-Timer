@@ -7,11 +7,22 @@ export const startAndPauseButtonAction = startAndPauseButton => {
   const minute = document.getElementById('inputMinute');
   const second = document.getElementById('inputSecond');
 
-  let time = [parseInt(hour.value), parseInt(minute.value), parseInt(second.value)];
+  const time = [parseInt(hour.value), parseInt(minute.value), parseInt(second.value)];
+
+  if (time[0] < 0 || time[1] < 0 || time[2] < 0) {
+    window.alert('유효한 값이 아닙니다. (음수 입력)');
+
+    hour.value = '';
+    minute.value = '';
+    second.value = '';
+
+    return;
+  }
+
   let totalSeconds = time[0] * 60 * 60 + time[1] * 60 + time[2];
 
   if (Number.isNaN(totalSeconds)) {
-    window.alert('유효한 값이 아닙니다.');
+    window.alert('유효한 값이 아닙니다. (숫자 외의 문자 입력)');
 
     hour.value = '';
     minute.value = '';
@@ -24,7 +35,6 @@ export const startAndPauseButtonAction = startAndPauseButton => {
   minute.disabled = true;
   second.disabled = true;
 
-  //TODO: input에 음수 입력 시의 오류 처리
   if (startAndPauseButton.innerText === 'start') {
     startAndPauseButton.innerText = 'pause';
 
