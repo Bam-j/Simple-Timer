@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
+html {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   font-family: 'Noto Sans KR', sans-serif;
 }
@@ -9,16 +14,30 @@ body {
   text-align: center;
   margin: 0 auto;
   padding-top: 1rem;
+
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
 }
 
 #main-container {
   text-align: center;
   margin: 0 auto;
   position: relative;
+  border-collapse: separate;
+  border-spacing: 0 0.25rem;
 }
 
 .formField{
   padding-top: 3rem;
+}
+
+td.disable-drag {
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
 }
 
 #inputHour:focus, #inputMinute:focus, #inputSecond:focus{
