@@ -47,6 +47,16 @@ td.disable-drag {
   box-shadow: 0 0 0.1em 0.1em #5B7CD8;
 }
 
+#startAndPauseButton {
+  border-radius: 0;
+  outline: #000D89 solid 1px;
+}
+
+#resetButton {
+  border-radius: 0;
+  outline: #9E0000 solid 1px;
+}
+
 #buttons {
   position: absolute;
   left: 50%;
