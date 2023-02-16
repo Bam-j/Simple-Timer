@@ -35,6 +35,8 @@ export const startAndPauseButtonAction = startAndPauseButton => {
   minute.disabled = true;
   second.disabled = true;
 
+  document.getElementById('resetButton').disabled = false;
+
   if (startAndPauseButton.innerText === 'start') {
     startAndPauseButton.innerText = 'pause';
 
