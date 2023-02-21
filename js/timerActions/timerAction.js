@@ -12,7 +12,6 @@ export const timerAction = totalSeconds => {
     totalSeconds--;
     updateInput(totalSeconds);
 
-    //TODO: 0초가 되어도 alert는 뜨지만 second가 1로 남아있는 문제
     if (totalSeconds <= 0) {
       window.alert('시간종료');
 
