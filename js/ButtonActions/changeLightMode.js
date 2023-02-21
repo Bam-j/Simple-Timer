@@ -1,7 +1,7 @@
 export const changeLightMode = () => {
   document.body.classList.remove('dark-mode');
 
-  document.getElementById('dark-mode-img').src = '/icons/brightness-high.svg';
+  document.getElementById('dark-mode-img').src = './../../icons/brightness-high.svg';
 
   document.getElementById('input-hour').classList.remove('dark-mode');
   document.getElementById('input-minute').classList.remove('dark-mode');
