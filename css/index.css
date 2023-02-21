@@ -9,11 +9,6 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
 }
 
-body.dark-mode {
-  background: #565656;
-  color: #cccccc;
-}
-
 #title{
   font-weight: bold;
   text-align: center;

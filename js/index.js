@@ -1,7 +1,5 @@
 import {startAndPauseButtonAction} from './ButtonActions/startAndPauseButtonAction.js';
 import {resetButtonAction} from './ButtonActions/resetButtonAction.js';
-import {darkModeIconsChange} from './ButtonActions/darkModeIconsChange.js';
-import {darkModeButtonAction} from './ButtonActions/darkModeButtonAction.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const startAndPauseButton = document.getElementById('startAndPauseButton');
