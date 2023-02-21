@@ -1,5 +1,6 @@
 import {startAndPauseButtonAction} from './ButtonActions/startAndPauseButtonAction.js';
 import {resetButtonAction} from './ButtonActions/resetButtonAction.js';
+import {darkModeIconsChange} from './ButtonActions/darkModeIconsChange.js';
 import {darkModeButtonAction} from './ButtonActions/darkModeButtonAction.js';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -16,7 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
     startAndPauseButton.innerText = 'start';
   });
 
-  darkModeButton.addEventListener('click', () => {
-    darkModeButtonAction();
-  })
+  darkModeButton.addEventListener('click', e => {
+    if (e.target.checked) {
+      document.body.classList.add('dark-mode');
+    }
+    else {
+      document.body.classList.remove('dark-mode');
+    }
+  });
 });

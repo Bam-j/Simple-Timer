@@ -9,6 +9,11 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
 }
 
+body.dark-mode {
+  background: #565656;
+  color: #cccccc;
+}
+
 header {
 }
 
@@ -24,49 +29,22 @@ header {
   user-select:none;
 }
 
-#dark-mode-button {
+#dark-mode-button, #dark-mode-img {
   position: fixed;
-  top: 0.5rem;
-  left: 95%;
+  top: 1rem;
+  left: 90%;
+  background: none;
+  border: none;
   cursor: pointer;
+
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
 }
 
-#dark-mode-button:hover {
-  content: url("/icons/brightness-high-fill.svg");
-}
-
-[type="checkbox"] {
-  appearance: none;
-  position: relative;
-  border: max(2px, 0.1em) solid gray;
-  border-radius: 1.25em;
-  width: 2.25em;
-  height: 1.25em;
-}
-
-[type="checkbox"]::before {
-  position: absolute;
-  left: 0;
-  width: 1em;
-  height: 1em;
-  border-radius: 50%;
-  transform: scale(0.8);
-  background-color: gray;
-  transition: left 250ms linear;
-}
-
-[type="checkbox"]:checked::before {
-  background-color: #fff;
-  left: 1em;
-}
-
-[type="checkbox"]:checked {
-  background-color: #ADADAD;
-  border-color: #595959;
-}
-
-[type="checkbox"]:enabled:hover {
-  box-shadow: 0 0 0 max(4px, 0.2em) lightgray;
+input[type='checkbox'] {
+  display: none;
 }
 
 #main-container {

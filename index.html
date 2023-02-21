@@ -14,7 +14,12 @@
 <body>
 <header>
   <h1 id='title'>Simple Timer</h1>
-  <input id='dark-mode-button' type='image' src='./icons/brightness-high.svg' />
+  <form>
+    <label for='dark-mode-button'>
+      <input id='dark-mode-button' type='checkbox'/>
+      <img id='dark-mode-img' src='/icons/brightness-high.svg'/>
+    </label>
+  </form>
 </header>
 <br>
 <main>
@@ -23,19 +28,19 @@
       <tr>
         <td class='disable-drag'>시(hour)</td>
         <td>
-          <input id='input-hour' class='form-control-sm' autocomplete='off' />
+          <input id='input-hour' class='form-control-sm' autocomplete='off'/>
         </td>
       </tr>
       <tr>
         <td class='disable-drag'>분(minute)</td>
         <td>
-          <input id='input-minute' class='form-control-sm' autocomplete='off' />
+          <input id='input-minute' class='form-control-sm' autocomplete='off'/>
         </td>
       </tr>
       <tr>
         <td class='disable-drag'>초(second)</td>
         <td>
-          <input id='input-second' class='form-control-sm' autocomplete='off' />
+          <input id='input-second' class='form-control-sm' autocomplete='off'/>
         </td>
       </tr>
     </table>
