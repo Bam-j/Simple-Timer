@@ -33,19 +33,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   darkModeImg.addEventListener('mouseover', () => {
     if (currentMode === 'light') {
-      darkModeImg.src = '/icons/brightness-high-fill.svg';
+      darkModeImg.src = 'icons/brightness-high-fill.svg';
     }
     else {
-      darkModeImg.src = '/icons/moon.svg';
+      darkModeImg.src = 'icons/moon.svg';
     }
   });
 
   darkModeImg.addEventListener('mouseout', () => {
     if (currentMode === 'light') {
-      darkModeImg.src = '/icons/brightness-high.svg';
+      darkModeImg.src = 'icons/brightness-high.svg';
     }
     else {
-      darkModeImg.src = '/icons/moon-fill.svg';
+      darkModeImg.src = 'icons/moon-fill.svg';
     }
   });
 });

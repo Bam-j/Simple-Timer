@@ -14,7 +14,9 @@ body.dark-mode{
   color: #A4A4A4;
 }
 
-#input-hour.dark-mode, #input-minute.dark-mode, #input-second.dark-mode{
+#input-hour.dark-mode,
+#input-minute.dark-mode,
+#input-second.dark-mode{
   background: #454545;
   border: #A0A0A0 0.125em solid;
   color: #FFFFFF;
