@@ -20,12 +20,16 @@ body.dark-mode {
   box-shadow: 0 0 0.1em 0.1em #5B7CD8;
 }
 
-#startAndPauseButton {
+#startAndPauseButton.dark-mode {
   border-radius: 0;
-  outline: #000D89 solid 1px;
+  outline: #000642 solid 1px;
+  background: #052A8E;
+  color: #E9E9E9;
 }
 
-#resetButton {
+#resetButton.dark-mode {
   border-radius: 0;
-  outline: #9E0000 solid 1px;
+  outline: #530000 solid 1px;
+  background: #9E0000;
+  color: #E9E9E9;
 }

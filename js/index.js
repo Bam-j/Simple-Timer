@@ -1,5 +1,7 @@
 import {startAndPauseButtonAction} from './ButtonActions/startAndPauseButtonAction.js';
 import {resetButtonAction} from './ButtonActions/resetButtonAction.js';
+import {changeDarkMode} from './ButtonActions/changeDarkMode.js';
+import {changeLightMode} from './ButtonActions/changeLightMode.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const startAndPauseButton = document.getElementById('startAndPauseButton');
@@ -20,13 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   darkModeButton.addEventListener('click', e => {
     if (e.target.checked) {
-      document.body.classList.add('dark-mode');
-      darkModeImg.src = '/icons/moon.svg';
+      changeDarkMode();
       currentMode = 'dark';
     }
     else {
-      document.body.classList.remove('dark-mode');
-      darkModeImg.src = '/icons/brightness-high.svg';
+      changeLightMode()
       currentMode =  'light';
     }
   });
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
       darkModeImg.src = '/icons/brightness-high-fill.svg';
     }
     else {
-      darkModeImg.src = '/icons/moon-fill.svg';
+      darkModeImg.src = '/icons/moon.svg';
     }
   });
 
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
       darkModeImg.src = '/icons/brightness-high.svg';
     }
     else {
-      darkModeImg.src = '/icons/moon.svg';
+      darkModeImg.src = '/icons/moon-fill.svg';
     }
   });
 });
