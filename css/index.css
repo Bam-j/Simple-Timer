@@ -19,7 +19,25 @@ body {
   -webkit-user-select:none;
   -moz-user-select:none;
   -ms-user-select:none;
-  user-select:none
+  user-select:none;
+}
+
+#dark-mode-button, #dark-mode-img {
+  position: fixed;
+  top: 1rem;
+  left: 90%;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+
+input[type='checkbox'] {
+  display: none;
 }
 
 #main-container {
@@ -41,7 +59,7 @@ td.disable-drag {
   user-select:none
 }
 
-#inputHour:focus, #inputMinute:focus, #inputSecond:focus{
+#input-hour:focus, #input-minute:focus, #input-second:focus{
   border: solid #083DDB;
   outline: none;
   box-shadow: 0 0 0.1em 0.1em #5B7CD8;

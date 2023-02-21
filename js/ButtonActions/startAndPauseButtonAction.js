@@ -3,9 +3,9 @@ import {timerInterval} from '../timerActions/timerAction.js';
 
 export const startAndPauseButtonAction = startAndPauseButton => {
   //TODO: 엘리먼트 취득하는 중복 코드 줄이기
-  const hour = document.getElementById('inputHour');
-  const minute = document.getElementById('inputMinute');
-  const second = document.getElementById('inputSecond');
+  const hour = document.getElementById('input-hour');
+  const minute = document.getElementById('input-minute');
+  const second = document.getElementById('input-second');
 
   const time = [parseInt(hour.value), parseInt(minute.value), parseInt(second.value)];
 

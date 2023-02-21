@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+html{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body.dark-mode{
+  background: #454545;
+  color: #A4A4A4;
+}
+
+#input-hour.dark-mode, #input-minute.dark-mode, #input-second.dark-mode{
+  background: #454545;
+  border: #A0A0A0 0.125em solid;
+  color: #FFFFFF;
+}
+
+#input-hour:focus.dark-mode,
+#input-minute:focus.dark-mode,
+#input-second:focus.dark-mode{
+  border: solid #C69F00;
+  outline: none;
+  box-shadow: 0 0 0.1em 0.1em #D8AD00;
+}
+
+#input-hour:disabled.dark-mode,
+#input-minute:disabled.dark-mode,
+#input-second:disabled.dark-mode{
+  background: #808080;
+}
+
+#startAndPauseButton.dark-mode{
+  border-radius: 0;
+  outline: #000642 solid 1px;
+  background: #052A8E;
+  color: #E9E9E9;
+}
+
+#resetButton.dark-mode{
+  border-radius: 0;
+  outline: #530000 solid 1px;
+  background: #9E0000;
+  color: #E9E9E9;
+}

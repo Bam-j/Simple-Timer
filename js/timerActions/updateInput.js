@@ -1,8 +1,8 @@
 export const updateInput = totalSeconds => {
   //TODO: 엘리먼트 취득하는 중복 코드 줄이기
-  const hour = document.getElementById('inputHour');
-  const minute = document.getElementById('inputMinute');
-  const second = document.getElementById('inputSecond');
+  const hour = document.getElementById('input-hour');
+  const minute = document.getElementById('input-minute');
+  const second = document.getElementById('input-second');
 
   const currentHour = ~~(totalSeconds / 60 / 60);
   const currentMinute = ~~((totalSeconds / 60) % 60);
