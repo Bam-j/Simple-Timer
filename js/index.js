@@ -15,7 +15,16 @@ document.addEventListener('DOMContentLoaded', () => {
     startAndPauseButtonAction(startAndPauseButton);
   });
 
+  startAndPauseButton.addEventListener('touchend', () => {
+    startAndPauseButtonAction(startAndPauseButton);
+  });
+
   resetButton.addEventListener('click', () => {
+    resetButtonAction();
+    startAndPauseButton.innerText = 'start';
+  });
+
+  resetButton.addEventListener('touchend', () => {
     resetButtonAction();
     startAndPauseButton.innerText = 'start';
   });
@@ -27,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     else {
       changeLightMode()
-      currentMode =  'light';
+      currentMode = 'light';
     }
   });
 
