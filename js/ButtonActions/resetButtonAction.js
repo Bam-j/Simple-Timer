@@ -14,6 +14,7 @@ export const resetButtonAction = () => {
   second.value = '';
 
   document.getElementById('resetButton').disabled = true;
+  document.getElementById('startAndPauseButton').innerText = 'start';
 
   clearInterval(timerInterval);
 };
