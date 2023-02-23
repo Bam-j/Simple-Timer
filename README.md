@@ -12,7 +12,14 @@
 ## 사용 기술
 `HTML5`, `CSS3`, `Bootstrap`, `JavaScript`
 
-## 결과
+## 결과 
 
-> <strong>[결과물 (GitHub Pages)](https://bam-j.github.io/Simple-Timer/)</strong>
+> - <strong>[결과물 (GitHub Pages)](https://bam-j.github.io/Simple-Timer/)</strong><br>
+> - <strong>[코드 설명 블로그 글(작성 중)]()</strong>
 
+
+- 입력창에 키보드 등으로 숫자를 입력합니다.
+- start 버튼으로 타이머를 시작합니다. 타이머가 시작되면 pause 버튼, reset 버튼이 활성화 됩니다.
+- 화면 우측상단의 태양(또는 달) 아이콘을 클릭하면 다크 모드/라이트 모드를 전환할 수 있습니다.
+
+![result_3](https://user-images.githubusercontent.com/64255763/220884343-7f5de7c6-fbce-4031-a4c1-dcd6db7580b2.gif)
