@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   resetButton.addEventListener('click', () => {
     resetButtonAction();
-    startAndPauseButton.innerText = 'start';
   });
 
   darkModeButton.addEventListener('click', e => {
