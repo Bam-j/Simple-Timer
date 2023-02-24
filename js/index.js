@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
       currentMode = 'dark';
     }
     else {
-      changeLightMode()
+      changeLightMode();
       currentMode = 'light';
     }
   });

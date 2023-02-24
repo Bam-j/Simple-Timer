@@ -15,7 +15,7 @@
 ## 결과 
 
 > - <strong>[결과물 (GitHub Pages)](https://bam-j.github.io/Simple-Timer/)</strong><br>
-> - <strong>[코드 설명 블로그 글(작성 중)]()</strong>
+> - <strong>[코드 설명 블로그 글](https://velog.io/@bami/%ED%83%80%EC%9D%B4%EB%A8%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-with-JavaScript)</strong>
 
 
 - 입력창에 키보드 등으로 숫자를 입력합니다.
