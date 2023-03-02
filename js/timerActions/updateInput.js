@@ -3,9 +3,9 @@ export const updateInput = totalSeconds => {
   const minute = document.getElementById('input-minute');
   const second = document.getElementById('input-second');
 
-  const currentHour = ~~(totalSeconds / 60 / 60);
-  const currentMinute = ~~((totalSeconds / 60) % 60);
-  const currentSecond = totalSeconds % 60;
+  const currentHour = Math.floor((totalSeconds / 60) / 60);
+  const currentMinute = Math.floor((totalSeconds / 60) % 60);
+  const currentSecond = Math.floor(totalSeconds % 60);
 
   hour.value = currentHour;
   minute.value = currentMinute;
